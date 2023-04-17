@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Users from './users/Users'
 
 const inputStyle = {
   marginTop: '10px',
@@ -36,6 +37,7 @@ function App() {
         onChange={(e) => setValue(e.target.value)}
       />
       {toggle === true && <div data-testid='toggle-element'>toggle</div>}
+      <Users />
     </div>
   )
 }
