@@ -46,7 +46,7 @@ describe('USERS TEST', () => {
 
   test('redirect to userDetailPage', async () => {
     axios.get.mockReturnValue(response)
-    render(renderWithRouter(<Users />))
+    renderWithRouter(<Users />)
     const users = await screen.findAllByTestId('user-item')
     expect(users.length).toBe(2)
     act(() => {
